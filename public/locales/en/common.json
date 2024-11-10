@@ -1,0 +1,36 @@
+{
+ "Read more": "Read more",
+ "apply_to_sell": "Apply to sell",
+ "apply_to_buy": "Apply To Buy",
+ "login": "Buyer Log In",
+ "login_as_buyer": "Log in as buyer",
+ "language": "Language",
+ "search_placeholder": "Search for a product or a brand",
+ "See it": "See it",
+ "Buy now": "Buy now",
+ "minimum": "minimum",
+ "msrp": "msrp",
+ "most_popular": "Most popular",
+
+ "category": {
+    "links": "Links",
+    "by_category": "Shop by category",
+
+    "home": "Home",
+    "inspiration": "Inspiration",
+    "brands": "Brands",
+    "agencies": "Agencies",
+    "clothing": "Clothing",
+    "accessories": "Fashion accessories",
+    "shoes": "Shoes",
+    "bags": "Bags",
+    "baby_kids": "Baby & kids",
+    "home_living": "Home & Living",
+    "sport": "Sport"
+},
+
+"error": {
+    "404": "Sorry, we couldn't find the page you were looking for.",
+    "500": "Sorry, we couldn't find the page you were looking for."
+ }
+}

@@ -1,0 +1,111 @@
+// import css lib
+@import "styles/lib";
+
+.current {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+
+  // inivisible hitarea to prevent dropdown from closing when mouse between link and dropdown
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    height: rem(16);
+    width: 100%;
+  }
+
+  :global(.open) & {
+    display: none;
+
+    @include mq(md) {
+      display: flex;
+    }
+  }
+}
+
+.icon {
+  width: rem(16) !important;
+  height: rem(16) !important;
+  margin-left: rem(8);
+  transform: rotate(180deg);
+  transition: 0.2s $ease-in-out-expo;
+}
+
+.options {
+  padding-top: rem(4);
+  padding-bottom: rem(4);
+  position: absolute;
+  background-color: white;
+  display: flex;
+  opacity: 0;
+  flex-direction: column;
+  width: calc(100% + rem(16));
+  box-shadow: $effect-navbar;
+  margin-left: rem(-8);
+  transform: translateY(rem(24));
+  transition:
+    transform 0.6s $ease-out-quad,
+    opacity 0.5s $ease-in-out-expo;
+
+  :global(.open) & {
+    position: static;
+    opacity: 1;
+    display: flex;
+    flex-direction: row;
+    width: min-content;
+    margin: auto;
+    visibility: visible;
+    transform: translateY(rem(8));
+    background-color: transparent;
+    box-shadow: none;
+
+    @include mq(md) {
+      position: absolute;
+      background-color: white;
+      transform: translateY(rem(24));
+      flex-direction: column;
+      display: flex;
+      transition:
+        transform 0.6s $ease-out-quad,
+        opacity 0.5s $ease-in-out-expo;
+      box-shadow: $effect-navbar;
+      margin-left: rem(-8);
+      opacity: 0;
+    }
+  }
+}
+.option {
+  text-transform: uppercase;
+  padding: rem(8) rem(8);
+}
+
+.dropdown {
+  position: relative;
+
+  &:hover {
+    color: color(bluetiful120);
+
+    @include mq(md) {
+      .options {
+        opacity: 1;
+        display: flex;
+        visibility: visible;
+        transform: translateY(rem(8));
+      }
+
+      .icon {
+        transform: rotate(0deg);
+      }
+    }
+  }
+
+  :global(.open) & {
+    width: 100%;
+
+    @include mq(md) {
+      width: unset;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+// import css lib
+@import "styles/lib";
+
+.pane {
+  display: none;
+  flex-direction: column;
+  align-items: space-between;
+  flex: 1;
+
+  @include mq(md) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &:global(.open) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    inset: 0;
+    top: rem(112);
+    overflow-y: auto;
+    background-color: white;
+    padding: rem(10) rem(16) rem(40) rem(16);
+    height: calc(100vh - rem(112px));
+    @include mq(md) {
+      top: rem(128);
+      flex-direction: row;
+      position: static;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 0;
+      overflow-y: visible;
+      height: calc(100vh - rem(128px));
+    }
+  }
+}

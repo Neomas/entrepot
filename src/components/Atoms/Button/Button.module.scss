@@ -1,0 +1,156 @@
+// import css lib
+@import "styles/lib";
+
+.button {
+  font: $font-large-label-large-semibold;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: rem(16);
+
+  transition: all 0.3s ease-out;
+}
+
+.primary {
+  padding: rem(16) rem(32);
+  border-radius: rem(8);
+  background-color: black;
+  color: white;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
+
+  &:hover {
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.24);
+    background-color: $color-shade-mine-shaft;
+  }
+
+  .icon {
+    :global(.icon) {
+      color: white;
+    }
+  }
+
+  &.darkmode {
+    color: black;
+    background-color: $color-highlight-candy-corn;
+
+    .icon {
+      :global(.icon) {
+        color: black;
+      }
+    }
+
+    &:hover {
+      background-color: white;
+    }
+  }
+
+  &.iconButton {
+    &.front {
+      padding-left: rem(16);
+    }
+    &.end {
+      padding-right: rem(16);
+    }
+  }
+}
+
+.secondary {
+  background-color: transparent;
+  padding: rem(16) rem(32);
+  border-radius: rem(8);
+  color: black;
+  border: rem(2) solid $color-shade-dim-gray;
+  justify-content: center;
+
+  &:hover {
+    background-color: $color-shade-dim-gray;
+    color: white;
+  }
+
+  &.darkmode {
+    color: white;
+    border: rem(2) solid white;
+
+    &:hover {
+      background-color: white;
+      color: black;
+    }
+  }
+
+  &.iconButton {
+    &.front {
+      padding-left: rem(16);
+    }
+    &.end {
+      padding-right: rem(16);
+    }
+  }
+}
+.tertiary {
+  border-radius: rem(8);
+  color: black;
+
+  .icon {
+    :global(.icon) {
+      color: $color-shade-light-gray;
+    }
+  }
+
+  &:hover {
+    &.iconButton {
+      &.end {
+        .icon {
+          transform: translateX(rem(8));
+        }
+      }
+    }
+    .icon {
+      background-color: $color-shade-dim-gray;
+      :global(.icon) {
+        color: black;
+      }
+    }
+  }
+
+  &.darkmode {
+    color: white;
+
+    .icon {
+      background-color: $color-shade-gallery;
+      :global(.icon) {
+        color: black;
+      }
+    }
+
+    &:hover {
+      .icon {
+        background-color: $color-shade-light-gray;
+      }
+    }
+  }
+
+  .icon {
+    width: rem(32);
+    height: rem(32);
+    border-radius: 50%;
+    background-color: $color-shade-mine-shaft;
+
+    :global(.icon) {
+      width: rem(16);
+      height: rem(16);
+    }
+  }
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-out;
+
+  :global(.icon) {
+    width: rem(24);
+    height: rem(24);
+    transition: all 0.3s ease-out;
+  }
+}

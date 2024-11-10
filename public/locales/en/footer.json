@@ -1,0 +1,52 @@
+{
+    "footerIntro": "We are an online wholesale marketplace connecting buyers with brands and sellers for the best shopping experience. With Trademart Digital your business will be in market all the time.",
+    "footerButton":"Start Shopping Today",
+
+    "category": {
+        "home": "Home",
+        "inspiration": "Inspiration",
+        "brands": "Brands",
+        "agencies": "Agencies",
+        "clothing": "Clothing",
+        "accessories": "Fashion accessories",
+        "shoes": "Shoes",
+        "bags": "Bags",
+        "baby_kids": "Baby & kids",
+        "home_living": "Home & Living",
+        "sport": "Sport"
+    },
+
+    "Marketplace": "Marketplace",
+
+    "Company": "Trademart",
+    "about_us": "About us",
+    "Trademart_Brussels": "Trademart",
+    "Contact": "Contact us",
+    "Careers": "Careers",
+    "PrivacyPolicy": "Privacy Policy",
+    "Terms": "Terms & Services", 
+    
+    
+    "FollowUs": "Follow us", 
+    "LinkedIn": "LinkedIn", 
+    "Facebook": "Facebook", 
+    "Instagram": "Instagram", 
+    "Pinterest": "Pinterest", 
+    
+    "Buyers": "Buyers", 
+    "ApplyBuy": "Apply To Buy", 
+    "LoginBuy": "Buyers Login", 
+    "BuyerHelp": "Buyer Help Center", 
+    
+    "Sellers": "Sellers", 
+    "RequestDemo": "Request a Demo",
+    "ApplySell": "Apply To Sell",
+    "LoginTDApps": "Sellers Platform",
+    "SellerHelp": "Seller Help Center",
+
+    "copyright": "POWERED BY MARKETTIME - © TRADEMART BRUSSELS 2022",
+    
+    "privacyStatement": "Privacy Policy",
+    "TermsConditions": "Terms & Conditions",
+    "CookiePolicy": "Cookie Policy"
+}

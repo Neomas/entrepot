@@ -1,0 +1,18 @@
+// import css lib
+@import "styles/lib";
+
+.hamburger {
+  display: flex;
+  align-self: center;
+  margin-left: auto;
+  cursor: pointer;
+
+  :global(.icon) {
+    width: rem(40);
+    height: rem(40);
+  }
+
+  @include mq(md) {
+    display: none;
+  }
+}

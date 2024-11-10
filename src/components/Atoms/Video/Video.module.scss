@@ -1,0 +1,38 @@
+// import css lib
+@import "styles/lib";
+
+.isVideo {
+  max-height: rem(592);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 80px;
+    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2280%22%20height%3D%2280%22%20viewBox%3D%220%200%2080%2080%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2280%22%20height%3D%2280%22%20rx%3D%224%22%20fill%3D%22black%22%2F%3E%0A%3Cpath%20d%3D%22M60.5%2039.9186C61.1667%2040.3035%2061.1667%2041.2657%2060.5%2041.6506L27.5%2060.7032C26.8333%2061.0881%2026%2060.607%2026%2059.8372L26%2021.732C26%2020.9622%2026.8333%2020.4811%2027.5%2020.866L60.5%2039.9186Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+    background-repeat: no-repeat;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
+    transition: background-image 0.5s ease;
+  }
+  &:hover::before {
+    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2280%22%20height%3D%2280%22%20viewBox%3D%220%200%2080%2080%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2280%22%20height%3D%2280%22%20rx%3D%224%22%20fill%3D%22%23333333%22%2F%3E%0A%3Cpath%20d%3D%22M60.5%2039.9186C61.1667%2040.3035%2061.1667%2041.2657%2060.5%2041.6506L27.5%2060.7032C26.8333%2061.0881%2026%2060.607%2026%2059.8372L26%2021.732C26%2020.9622%2026.8333%2020.4811%2027.5%2020.866L60.5%2039.9186Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+    transition: background-image 0.3s ease;
+  }
+}
+
+.image {
+  width: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}

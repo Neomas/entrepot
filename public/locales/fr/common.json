@@ -1,0 +1,36 @@
+{
+ "Read more": "Lire la suite",
+ "apply_to_sell": "Postuler pour vendre",
+ "apply_to_buy": "Appliquer pour acheter",
+ "login": "log in",
+ "language": "Langue",
+ "login_as_buyer": "Connectex-vous en tant qu'acheteur",
+ "search_placeholder": "Rechercher un produit ou une marque",
+ "See it": "Voir",
+ "Buy now": "Acheter",
+ "minimum": "minimum",
+ "msrp": "msrp",
+ "most_popular": "Le plus populaire",
+
+ "category": {
+    "links": "Liens",
+    "by_category": "Acheter par catégorie",
+
+    "home": "Home",
+    "inspiration": "Inspiration",
+    "brands": "Marques",
+    "agencies": "Agences",
+    "clothing": "Clothing",
+    "accessories": "Fashion accessories",
+    "shoes": "Chaussures",
+    "bags": "Bags FR",
+    "baby_kids": "Baby & kids",
+    "home_living": "Home & Living",
+    "sport": "Sport"
+},
+
+"error": {
+    "404": "Page non trouvée",
+    "500": "Erreur interne"
+}
+}

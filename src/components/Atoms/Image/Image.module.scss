@@ -1,0 +1,11 @@
+// import css lib
+@import "styles/lib";
+
+.storyblok-image {
+  opacity: 0;
+  transition: opacity 0.3s $ease-out-quad;
+}
+
+.is-loaded {
+  opacity: 1;
+}

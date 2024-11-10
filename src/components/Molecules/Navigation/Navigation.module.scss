@@ -1,0 +1,104 @@
+// import css lib
+@import "styles/lib";
+
+.navigationWrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: space(4) space(6);
+  background-color: white;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+
+  @include mq(sm) {
+    padding: space(6) space(10);
+  }
+
+  @include mq(lg) {
+    padding: space(6) space(22);
+  }
+}
+.logoLink {
+  height: rem(80px);
+}
+
+.logo {
+  height: rem(80px);
+  margin-right: rem(24);
+
+  @include mq(md) {
+    margin-right: rem(40);
+  }
+}
+
+.linkWrapper {
+  display: none;
+  align-items: center;
+  gap: rem(8);
+
+  @include mq(sm) {
+    gap: rem(24);
+    display: flex;
+  }
+  @include mq(md) {
+    gap: rem(32);
+  }
+
+  :global(.open) & {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: rem(16);
+    margin-bottom: rem(16);
+
+    > a {
+      border-bottom: 1px solid $color-shade-light-gray;
+      flex: 1;
+      display: flex;
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+      padding-bottom: rem(16);
+    }
+
+    @include mq(md) {
+      flex-direction: row;
+      position: static;
+      margin-bottom: rem(0);
+      gap: rem(32);
+
+      > a {
+        border-bottom: none;
+        flex: unset;
+        width: unset;
+        padding-bottom: rem(0);
+      }
+    }
+  }
+}
+
+.buttonWrapper {
+  display: flex;
+  align-items: center;
+  gap: rem(24);
+  margin-left: auto;
+
+  :global(.open) & {
+    margin: auto auto 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 0;
+
+    @include mq(md) {
+      margin: 0;
+      margin-left: auto;
+      gap: rem(24);
+    }
+  }
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+}

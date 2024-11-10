@@ -1,0 +1,53 @@
+{
+    "footerIntro": "Nous sommes une place de marché omnicanale pour les grossistes européens où se rencontrent marques, agents et détaillants. Avec Trademart Digital, votre entreprise est accessible 7j/7 et 24h/24.",
+    "footerButton":"Commencez vos achats dès aujourd'hui",
+
+    "category": {
+        "home": "Home",
+        "inspiration": "Inspiration",
+        "brands": "Marques",
+        "agencies": "Agences",
+        "clothing": "Clothing",
+        "accessories": "Fashion accessories",
+        "shoes": "Chaussures",
+        "bags": "Bags",
+        "baby_kids": "Baby & kids",
+        "home_living": "Home & Living",
+        "sport": "Sport"
+     },
+
+     "Marketplace": "Marché",
+
+     "Company": "TRADEMART",
+     "about_us": "À Propos de Nous",
+     "Trademart_Brussels": "Trademart",
+     "Contact": "Contact",
+     "Careers": "Jobs",
+     "PrivacyPolicy": "Politique de confidentialité",
+     "Terms": "Conditions et services", 
+     
+     
+     "FollowUs": "Suivez-nous", 
+     "LinkedIn": "LinkedIn", 
+     "Facebook": "Facebook", 
+     "Instagram": "Instagram", 
+     "Pinterest": "Pinterest", 
+     
+     "Buyers": "ACHETEURS", 
+     "ApplyBuy": "Devenir Acheteur", 
+     "LoginBuy": "Connexion Acheteur", 
+     "BuyerHelp": "Help Center Acheteur", 
+     
+     "Sellers": "VENDEURS", 
+     "RequestDemo": "Demander une Démo",
+     "ApplySell": "Vendre sur Trademart Digital",
+     "LoginTDApps": "Plateforme Vendeur",
+     "SellerHelp": "Help Center Vendeur",
+
+
+    "copyright": "SOFTWARE MARKETTIME - © TRADEMART BRUSSELS 2022",
+
+    "privacyStatement": "Politique de confidentialité",
+    "TermsConditions": "Termes et conditions",
+    "CookiePolicy": "Politique de cookies"
+}

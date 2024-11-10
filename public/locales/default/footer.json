@@ -1,0 +1,52 @@
+{
+"footerIntro": "Wij zijn een omnichannel marktplaats waar Europese merken, agenten en inkopers elkaar ontmoeten. Met Trademart Digital is je onderneming 24/7 bereikbaar.",
+"footerButton":"Begin vandaag nog met winkelen",
+
+"category": {
+        "home": "Home",
+        "inspiration": "Inspiratie",
+        "brands": "Merken",
+        "agencies": "Agenten",
+        "clothing": "Clothing",
+        "accessories": "Fashion accessories",
+        "shoes": "Schoenen",
+        "bags": "Bags",
+        "baby_kids": "Baby & kids",
+        "home_living": "Home & Living",
+        "sport": "Sport"
+    },
+
+    "Marketplace": "TRADEMART DIGITAL",
+
+    "Company": "Bedrijf",
+    "about_us": "Over ons",
+    "Trademart_Brussels": "Trademart",
+    "Contact": "Contacteer Ons",
+    "Careers": "Jobs",
+    "PrivacyPolicy": "Privacybeleid",
+    "Terms": "Voorwaarden & diensten", 
+    
+    
+    "FollowUs": "Volg ons", 
+    "LinkedIn": "LinkedIn", 
+    "Facebook": "Facebook", 
+    "Instagram": "Instagram", 
+    "Pinterest": "Pinterest", 
+    
+    "Buyers": "INKOPERS", 
+    "ApplyBuy": "Word Inkoper", 
+    "LoginBuy": "Inloggen om te Kopen", 
+    "BuyerHelp": "Inkopers Help Center", 
+    
+    "Sellers": "Verkopers", 
+    "RequestDemo": "Vraag Demo aan",
+    "ApplySell": "Verkoper Worden",
+    "LoginTDApps": "Verkopers Platform",
+    "SellerHelp": "Verkopers Help Center",
+
+    "copyright": "SOFTWARE MARKETTIME - © TRADEMART BRUSSELS 2022",
+
+    "privacyStatement": "Privacybeleid",
+    "TermsConditions": "Algemene voorwaarden",
+    "CookiePolicy": "Cookie beleid"
+}

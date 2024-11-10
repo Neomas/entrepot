@@ -1,0 +1,135 @@
+// import css lib
+@import "styles/lib";
+
+.carousel {
+  width: 100%;
+  filter: drop-shadow(0px 4px 12px rgba(22, 44, 81, 0.16));
+
+  @include mq(sm) {
+    overflow: hidden;
+  }
+}
+
+.carousel__container {
+  display: flex;
+  width: 100%;
+}
+
+.carouselWrapper {
+  @include span(4);
+  position: relative;
+  z-index: 1;
+
+  @include mq(sm) {
+    padding-left: rem(64);
+    padding-right: rem(64);
+    @include span(12);
+    filter: none;
+  }
+}
+
+.carousel__item {
+  margin-right: rem(16);
+  width: 100%;
+  flex: 0 0 calc(100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  @include mq(sm) {
+    min-height: unset;
+    flex: 0 0 calc(25% - (rem(16) - rem(16) / 4));
+
+    &.items-1 {
+      flex: 0 0 calc(100% - (rem(16) - rem(16) / 1));
+    }
+    &.items-2 {
+      flex: 0 0 calc(50% - (rem(16) - rem(16) / 2));
+    }
+    &.items-3 {
+      flex: 0 0 calc(33% - (rem(16) - rem(16) / 3));
+    }
+    &.items-4 {
+      flex: 0 0 calc(25% - (rem(16) - rem(16) / 4));
+    }
+    &.items-5 {
+      flex: 0 0 calc(20% - (rem(16) - rem(16) / 5));
+    }
+  }
+}
+
+.dotWrapper {
+  display: flex;
+  gap: rem(8);
+  margin-top: rem(32);
+  align-items: center;
+  justify-content: center;
+
+  @include mq(sm) {
+    margin-top: rem(40);
+  }
+}
+
+.dot {
+  width: rem(8);
+  height: rem(8);
+  border-radius: 50%;
+  background-color: $color-shade-light-gray;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  @include mq(sm) {
+    width: rem(12);
+    height: rem(12);
+  }
+  &.selected {
+    background-color: black;
+  }
+}
+
+.emblabutton {
+  background-color: black;
+  color: $color-highlight-candy-corn;
+  width: rem(48);
+  height: rem(48);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  transition:
+    background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out;
+  // compensate for dots
+  margin-top: rem(-25);
+  @include mq(sm) {
+    display: flex;
+  }
+  &.prev {
+    :global(.icon) {
+      transform: rotate(180deg);
+    }
+  }
+  &.next {
+    right: 0;
+    left: auto;
+  }
+
+  :global(.icon) {
+    color: $color-highlight-candy-corn;
+    width: rem(16);
+    height: rem(16);
+  }
+
+  &:hover {
+    background-color: $color-highlight-candy-corn;
+    color: black;
+
+    :global(.icon) {
+      color: black;
+    }
+  }
+}

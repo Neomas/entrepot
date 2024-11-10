@@ -1,0 +1,94 @@
+// import css lib
+@import "styles/lib";
+
+.section {
+  margin-top: rem(56);
+  margin-bottom: rem(56);
+
+  @include mq(sm) {
+    margin-top: rem(120);
+    margin-bottom: rem(120);
+  }
+}
+
+.container {
+  @include o-site-container();
+  @include row(4);
+  position: relative;
+  row-gap: rem(16);
+
+  @include mq(sm) {
+    @include row(12);
+
+    &.right {
+      .textWrapper {
+        @include span(4, 2);
+      }
+
+      .imageWrapper {
+        @include span(5, 7);
+      }
+    }
+
+    &.left {
+      .textWrapper {
+        @include span(4, 8);
+      }
+
+      .imageWrapper {
+        @include span(5, 2);
+        grid-row: 1;
+      }
+    }
+  }
+}
+
+.textWrapper {
+  @include span(4);
+
+  @include mq(sm) {
+    :global(.button) {
+      margin-top: rem(32);
+      width: fit-content;
+    }
+
+    &.noMedia {
+      @include span(10, 2);
+    }
+  }
+}
+
+.title {
+  margin-bottom: rem(16);
+
+  &:first-child {
+    margin-bottom: rem(16);
+  }
+}
+
+.imageWrapper {
+  @include span(4);
+  position: relative;
+  height: 100%;
+  order: -1;
+  //max-height: rem(366);
+
+  @include mq(sm) {
+    order: inherit;
+    &.noInfo {
+      @include span(12);
+      max-height: rem(592);
+    }
+  }
+}
+
+.imageLink {
+  @include spread-link;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: cover;
+}

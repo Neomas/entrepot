@@ -1,0 +1,128 @@
+// import css lib
+@import "styles/lib";
+
+.section {
+  @include o-site-container();
+  @include row(4);
+  position: relative;
+  min-height: rem(744);
+  height: auto;
+  margin-top: rem(88);
+
+  @include mq(sm) {
+    margin-top: rem(106);
+    @include row(12);
+  }
+}
+
+.container {
+  @include span(4);
+  display: flex;
+  flex-direction: column;
+  gap: rem(24);
+  height: 100%;
+  justify-content: flex-end;
+  z-index: 1;
+  padding: rem(40) 0;
+
+  @include mq(sm) {
+    @include span(8);
+    padding: rem(96) 0;
+  }
+}
+.image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  object-fit: cover;
+  aspect-ratio: 1512/744;
+}
+
+.title {
+  font: $font-small-h2;
+  color: white;
+  z-index: 1;
+  position: relative;
+  font-weight: 600;
+
+  @include mq(sm) {
+    font: $font-large-h2;
+  }
+}
+
+.info {
+  font: $font-small-h6;
+  color: white;
+  z-index: 1;
+  position: relative;
+  font-weight: 600;
+
+  @include mq(sm) {
+    font: $font-large-h6;
+  }
+}
+
+.buttonWrapper {
+  display: flex;
+  align-items: center;
+  gap: rem(32);
+}
+
+.secondary {
+  min-height: rem(568);
+
+  .container {
+    z-index: 2;
+
+    @include mq(sm) {
+      padding: rem(80) 0;
+      @include span(6);
+    }
+  }
+  .info {
+    font: $font-small-lead;
+
+    @include mq(sm) {
+      font: $font-large-lead-small;
+    }
+    color: white;
+    z-index: 1;
+    font-weight: 400;
+    position: relative;
+  }
+
+  .imageoverlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: white;
+    mix-blend-mode: multiply;
+  }
+}
+
+.tertiary {
+  min-height: rem(440);
+
+  .info {
+    font: $font-small-lead;
+
+    @include mq(sm) {
+      font: $font-large-lead-small;
+    }
+    color: white;
+    z-index: 1;
+    font-weight: 400;
+    position: relative;
+  }
+  .title {
+    font: $font-small-h2;
+
+    @include mq(sm) {
+      font: $font-large-h2;
+    }
+  }
+}
